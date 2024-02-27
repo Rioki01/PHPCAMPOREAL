@@ -2,7 +2,7 @@
 
 
 //define o titulo
-define('TITLE', 'Chamado ReaL');
+define('TITLE', 'ChamadoReal');
 
 
 ?>

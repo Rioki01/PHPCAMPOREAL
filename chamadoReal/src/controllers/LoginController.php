@@ -14,7 +14,7 @@ class LoginController{
     public function autenticar($email, $password){
         foreach($this->users as $user){
             if(($user->email == $email) && ($user->password == $password)){
-                $_SESSION['autenticacao'] = 'SIM';
+                $_SESSION['autenticar'] = 'SIM';
                 $_SESSION['id'] = $user->id;
                 $_SESSION['profile_id'] = $user->profile_id;
                 //redireciona para um arquivo php
@@ -22,7 +22,7 @@ class LoginController{
                 exit;
             }
         }
-        $_SESSION['autenticacao'] = 'NAO';
+        $_SESSION['autenticar'] = 'NAO';
         header('Location: index.php?login=erro');
         exit;
     }
