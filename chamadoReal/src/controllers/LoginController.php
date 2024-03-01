@@ -1,5 +1,5 @@
 <?php
-require_once "../chamadoReal/src/models/User.php";
+require_once "C:/xampp/htdocs/chamadoReal/src/models/User.php";
 class LoginController{
     private $users;
     
@@ -13,7 +13,7 @@ class LoginController{
     }
     public function autenticar($email, $password){
         foreach($this->users as $user){
-            if(($user->email == $email) && ($user->password == $password)){
+            if ($user->email === $email && $user->verificarSenha($password)) {
                 $_SESSION['autenticar'] = 'SIM';
                 $_SESSION['id'] = $user->id;
                 $_SESSION['profile_id'] = $user->profile_id;

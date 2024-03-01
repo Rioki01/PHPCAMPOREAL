@@ -1,7 +1,7 @@
 <?php
 // registra_chamado.php
 session_start();
-require_once "../chamadoReal/validador_acesso.php";
+require_once "C:/xampp/htdocs/chamadoReal/validador_acesso.php";
 
 // O restante do código permanece o mesmo, mas você pode querer otimizar o código CSS e HTML.
 
@@ -16,7 +16,7 @@ require_once "../chamadoReal/validador_acesso.php";
 
 
 	//abrindo o arquivo
-	$arquivo = fopen('../../arquivo.txt', 'a');
+	$arquivo = fopen('C:/xampp/htdocs/chamadoReal/arquivo.txt', 'a');
 	//escrevendo o texto
 	fwrite($arquivo, $texto);
 	//fechando o arquivo

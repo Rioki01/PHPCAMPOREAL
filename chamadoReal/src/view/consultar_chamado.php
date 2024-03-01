@@ -1,5 +1,5 @@
 <?php
-require_once "../chamadoReal/validador_acesso.php";
+require_once "C:/xampp/htdocs/chamadoReal/validador_acesso.php";
 
 //chamados
 $chamados = array();

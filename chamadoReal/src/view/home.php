@@ -1,6 +1,6 @@
 <?php
 // home.php
-require_once "../chamadoReal/validador_acesso.php";
+require_once "C:/xampp/htdocs/chamadoReal/validador_acesso.php";
 ?>
 
 <!-- O conteúdo do arquivo home.php permanece o mesmo, mas você pode querer otimizar o código CSS e HTML. -->
